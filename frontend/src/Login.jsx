@@ -14,7 +14,7 @@ function Login({ setUsuarioLogado }) {
 
         try {
             const resposta = await fetch(
-                "http://localhost:3000/usuarios/login",
+                "https://dsw2-ulike-react.onrender.com/usuarios/login",
                 {
                     method: "POST",
                     headers: {
