@@ -25,7 +25,7 @@ function Curtida({ usuarioLogado, post, carregarPosts }) {
 
         try {
             const resposta = await fetch(
-                "http://localhost:3000/likes",
+                "https://dsw2-ulike-react.onrender.com/likes",
                 {
                     method: "POST",
                     headers: {
