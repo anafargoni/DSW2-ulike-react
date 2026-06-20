@@ -52,7 +52,7 @@ function Post({ usuarioLogado, carregarPosts }) {
 
         try {
             const resposta = await fetch(
-                "http://localhost:3000/posts",
+                "https://dsw2-ulike-react.onrender.com/posts",
                 {
                     method: "POST",
                     headers: {
