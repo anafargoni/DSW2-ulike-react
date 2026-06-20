@@ -1,17 +1,16 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-    user: 'usuario',
-    host: 'database',
-    database: 'bancodados',
-    password: 'senha',
-    port: 5432,
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
-// Função usada para operações ACID simples
+// Função usada para operações simples
 const query = (text, params) => pool.query(text, params);
 
-// Função usada para realizar operações com transações.
+// Transações
 async function transaction(operar) {
   const conexao = await pool.connect();
   try {
