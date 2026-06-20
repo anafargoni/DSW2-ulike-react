@@ -1,0 +1,37 @@
+.botoes {
+    display: flex;
+    align-items: center;
+}
+
+.btn-curtida {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+    border: none !important;
+
+    color: white !important;
+    opacity: 1 !important;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* Hover antes de curtir: só levanta */
+.btn-curtida:hover {
+    transform: scale(1.1);
+}
+
+/* Estado curtido */
+.btn-curtida.curtido {
+    color: #9966CC !important;
+}
+
+/* Hover depois de curtido */
+.btn-curtida.curtido:hover {
+    transform: scale(1.1);
+}

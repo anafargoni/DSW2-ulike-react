@@ -1,0 +1,201 @@
+.botoes {
+    display: flex;
+    align-items: center;
+}
+
+.btn-comentario {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    color: white !important;
+    opacity: 1 !important;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-comentario:hover {
+    color: #9966CC;
+    transform: scale(1.1);
+}
+
+.input-comentario {
+    width: 220px;
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input-comentario:focus {
+    border-color: #8A2BE2;
+    box-shadow: 0 0 5px rgba(138, 0, 196, 0.2);
+}
+
+.comentario-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nome-comentario {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.usuario-comentario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.foto-usuario-comentario {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #dee2e6;
+    display: block;
+}
+
+.avatar-comentario {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    background: #6c757d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.comentarios-container {
+    width: 100%;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f1f3f5;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.comentario-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-menu-comentario {
+    background: transparent !important;
+    border: none !important;
+    color: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-menu-comentario:hover {
+    color: #9966CC !important;
+    transform: scale(1.1);
+}
+
+.dropdown-item svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.comentario-form {
+    margin: 12px 0;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input-comentario {
+    width: 100%;
+    padding: 12px 50px 12px 16px;
+    border: 1px solid #dee2e6;
+    border-radius: 999px;
+    background: #f8f9fa;
+    font-size: 14px;
+    transition: all 0.25s ease;
+    flex: 1;
+}
+
+.input-comentario:focus {
+    outline: none;
+    border-color: #8A2BE2;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(138, 0, 196, .15);
+}
+
+.btn-enviar {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background: #9966CC;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.btn-enviar:hover {
+    background: #8A2BE2;
+    transform: translateY(-50%) scale(1.08);
+}
+
+.btn-enviar i {
+    font-size: 0.9rem;
+}
+
+.comentarios-box {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form-comentario {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+/* ===== MENU AÇÕES ===== */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    z-index: 9999 !important;
+}
+
+/* Faz o menu abrir para cima */
+.dropdown-menu-up {
+    top: auto !important;
+    bottom: 100% !important;
+    margin-bottom: 8px !important;
+}

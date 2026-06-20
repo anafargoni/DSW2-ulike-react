@@ -1,0 +1,161 @@
+.usuario-post {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.foto-usuario-post {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #dee2e6;
+}
+
+.avatar-padrao-post {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #6c757d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.masonry-grid {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+    .masonry-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .masonry-grid {
+        column-count: 1;
+    }
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn-menu-post {
+    background: transparent !important;
+    border: none !important;
+    color: white !important;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-menu-post:hover {
+    color: #9966CC !important;
+    transform: scale(1.1);
+}
+
+.usuario-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-item svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+.acoes-post {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.comentario-wrapper {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.comentarios-container {
+    margin-top: 12px;
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+}
+
+.card {
+    background: rgba(20, 12, 35, 0.9) !important;
+    color: white !important;
+
+    border: 1px solid #3a2a55;
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+
+    overflow: visible !important;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    z-index: 9999 !important;
+}
+
+.post-editado {
+    color: white !important;
+}
+
+.container {
+    background: transparent !important;
+}
+
+/* Editar */
+.dropdown-item:hover {
+    background-color: rgba(153, 102, 204, 0.15) !important;
+    color: #9966CC !important;
+}
+
+/* Faz o ícone acompanhar a cor */
+.dropdown-item:hover svg {
+    color: #9966CC !important;
+}
+
+.dropdown-item.text-danger:hover {
+    background-color: rgba(220, 53, 69, 0.15) !important;
+    color: #dc3545 !important;
+}
+
+.dropdown-item.text-danger:hover svg {
+    color: #dc3545 !important;
+}

@@ -1,0 +1,90 @@
+/*COMENTARIOS E CURTIDAS*/
+.botoes {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.botoes button {
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #555;
+}
+
+/*TEXTAREA*/
+textarea {
+    width: 300px;
+    height: 60px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #4f46e5;
+}
+
+/*BUTTON*/
+button {
+    margin-top: 10px;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 12px;
+    margin-right: 10px;
+}
+
+button {
+    transform: translateY(-2px);
+}
+
+/*INPUT*/
+input {
+    width: 100%;
+    max-width: 300px;
+    padding: 6px 8px;
+    font-size: 15px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9ca3af;
+}
+
+/*BODY*/
+html,
+body,
+#root {
+    min-height: 100vh;
+
+    background: radial-gradient(
+        circle at top,
+        #1a102e,
+        #0b0616
+    );
+
+    background-attachment: fixed;
+}

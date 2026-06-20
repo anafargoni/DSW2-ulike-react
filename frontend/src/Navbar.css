@@ -1,0 +1,304 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbarToda {
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #0b0616, #1a102e);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: none !important;
+}
+
+/* Logo */
+.logo {
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.btn-logo {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Botão Início */
+.nav-home {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-home:hover {
+    color: #c084fc;
+    transform: translateY(-2px);
+}
+
+/* Botões Login e Cadastro */
+.nav-btn {
+    border-radius: 10px;
+    padding: 8px 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Botão Novo Post */
+.btn-post {
+    background: transparent !important;
+    border: none !important;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+/* texto escondido */
+.btn-post span {
+    max-width: 0;
+    opacity: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* expansão */
+.btn-post:hover {
+    width: 140px;
+    color: #c084fc;
+    justify-content: flex-start;
+    padding-left: 12px;
+}
+
+.btn-post:hover span {
+    max-width: 100px;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+/* =========================
+   FOTO / AVATAR
+========================= */
+
+.foto,
+.nao-logado {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    vertical-align: middle;
+    transition: all 0.25s ease;
+}
+
+.foto {
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.nao-logado {
+    background: #6c757d;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* Efeito ao passar mouse */
+.user-dropdown:hover .foto,
+.user-dropdown:hover .nao-logado {
+    transform: scale(1.08);
+    border-color: #7c3aed;
+    box-shadow: 0 0 18px rgba(124, 58, 237, 0.45);
+}
+
+/* =========================
+   DROPDOWN 
+========================= */
+
+.user-dropdown {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+    gap: 6px;
+    padding: 0;
+    line-height: 1;
+    text-decoration: none;
+}
+
+/* Remove seta padrão */
+.user-dropdown::after {
+    display: none !important;
+}
+
+/* =========================
+   MENU DROPDOWN
+========================= */
+
+.dropdown-menu {
+    background-color: #140c23 !important;
+    --bs-dropdown-bg: #140c23 !important;
+    --bs-dropdown-link-hover-bg: rgba(124, 58, 237, 0.15) !important;
+    --bs-dropdown-link-active-bg: rgba(124, 58, 237, 0.25) !important;
+    border: 1px solid rgba(124, 58, 237, 0.2) !important;
+}
+
+.usuario {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-divider {
+    border-color: #495057;
+}
+
+.dropdown-item {
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: transparent !important;
+    color: white !important;
+    padding: 12px 16px !important;
+    margin: 0 !important;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background: linear-gradient(
+        90deg,
+        rgba(13, 110, 253, 0.18),
+        rgba(13, 110, 253, 0.05)
+    ) !important;
+
+    color: #6ea8fe !important;
+    padding-left: 24px !important;
+}
+
+.dropdown-item.text-danger {
+    color: #ff6b6b !important;
+}
+
+.dropdown-item.text-danger:hover {
+    background: rgba(255, 107, 107, 0.12) !important;
+    color: #ff8f8f !important;
+}
+
+/* =========================
+   BOTÕES LOGIN / CADASTRO
+========================= */
+
+.nav-btn {
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+/* LOGIN */
+.btn-outline-primary.nav-btn {
+    background: transparent !important;
+    color: #c084fc !important;
+    border: 1px solid #7c3aed !important;
+}
+
+.btn-outline-primary.nav-btn:hover {
+    background: rgba(124, 58, 237, 0.15) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.25);
+}
+
+/* CADASTRO */
+.btn-primary.nav-btn {
+    background: linear-gradient(135deg, #5b21b6, #7c3aed) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-primary.nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
+    filter: brightness(1.1);
+}
+
+.login-footer-navbar {
+    color: #b9a7d9;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.login-link {
+    color: #c084fc;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.login-link:hover {
+    color: #a855f7;
+    text-decoration: underline;
+}
+
+/* =========================
+   BOTÕES DA HOME
+========================= */
+
+.home-btn {
+    padding: 10px 22px;
+    border-radius: 18px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* Login */
+.home-login {
+    background: transparent;
+    border: 1.5px solid #7c3aed;
+    color: #d7b6ff;
+}
+
+.home-login:hover {
+    background: rgba(124, 58, 237, 0.08);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Cadastro */
+.home-cadastro {
+    background: #7c3aed;
+    border: none;
+    color: white;
+}
+
+.home-cadastro:hover {
+    background: #8b5cf6;
+    transform: translateY(-2px);
+}
