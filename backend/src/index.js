@@ -1,12 +1,14 @@
 const express = require("express");
 const cors = require("cors");
-const path = require("path");
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use(cors());
+
+app.use(cors({
+  origin: "https://dsw-2-ulike-react.vercel.app"
+}));
 
 const usuario = require("./routes/usuarios");
 const comentario = require("./routes/comentarios");
@@ -18,11 +20,10 @@ app.use("/comentarios", comentario);
 app.use("/posts", post);
 app.use("/likes", like);
 
-
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../doc.html"));
+  res.send("API funcionando");
 });
 
 app.listen(port, () => {
-  console.log(`Servidor executando em http://localhost:${port}`);
+  console.log(`Servidor executando em ${port}`);
 });
