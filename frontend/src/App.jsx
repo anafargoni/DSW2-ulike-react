@@ -32,7 +32,7 @@ function App() {
   // USUÁRIOS
   async function carregarUsuarios() {
     try {
-      const resposta = await fetch("http://localhost:3000/usuarios");
+      const resposta = await fetch("https://dsw2-ulike-react.onrender.com/usuarios");
       if (!resposta.ok) {
         throw new Error();
       }
@@ -46,7 +46,7 @@ function App() {
   // POSTS
   async function carregarPosts() {
     try {
-      const r = await fetch("http://localhost:3000/posts");
+      const r = await fetch("https://dsw2-ulike-react.onrender.com/posts");
       if (!r.ok) {
         throw new Error("Erro na requisição")
       }
