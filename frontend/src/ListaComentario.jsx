@@ -99,7 +99,7 @@ function ListaComentario({
         try {
 
             const resposta = await fetch(
-                "http://localhost:3000/comentarios/" + comentario.id,
+                "https://dsw2-ulike-react.onrender.com/comentarios/" + comentario.id,
                 {
                     method: "PUT",
                     headers: {
@@ -140,7 +140,7 @@ function ListaComentario({
         try {
 
             const resposta = await fetch(
-                "http://localhost:3000/comentarios/" + comentario.id,
+                "https://dsw2-ulike-react.onrender.com/comentarios/" + comentario.id,
                 {
                     method: "DELETE",
                     headers: {
