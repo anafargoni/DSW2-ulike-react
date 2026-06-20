@@ -84,7 +84,7 @@ function App() {
         })
       }
 
-      const resposta = await fetch(`https://dsw2-ulike-react.onrender.com/${id}`, options);
+      const resposta = await fetch(`https://dsw2-ulike-react.onrender.com/posts/${id}`, options);
 
       if (!resposta.ok) {
         throw new Error();
