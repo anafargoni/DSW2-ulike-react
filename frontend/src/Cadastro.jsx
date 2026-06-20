@@ -40,7 +40,7 @@ function Cadastro({ usuarios, carregarUsuarios }) {
 
     try {
       const resposta = await fetch(
-        "http://localhost:3000/usuarios",
+        "https://dsw2-ulike-react.onrender.com/usuarios",
         {
           method: "POST",
           headers: {
