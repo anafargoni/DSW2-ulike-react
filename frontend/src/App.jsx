@@ -84,7 +84,7 @@ function App() {
         })
       }
 
-      const resposta = await fetch(`http://localhost:3000/posts/${id}`, options);
+      const resposta = await fetch(`https://dsw2-ulike-react.onrender.com/${id}`, options);
 
       if (!resposta.ok) {
         throw new Error();
@@ -139,7 +139,7 @@ function App() {
         })
       }
       if (form) {
-        const resposta = await fetch(`http://localhost:3000/posts/${post.id}`, options);
+        const resposta = await fetch(`https://dsw2-ulike-react.onrender.com/${post.id}`, options);
 
         if (!resposta.ok) {
           throw new Error();
