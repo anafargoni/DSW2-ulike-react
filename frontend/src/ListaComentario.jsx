@@ -47,7 +47,7 @@ function ListaComentario({
         try {
 
             const resposta = await fetch(
-                "http://localhost:3000/comentarios",
+                "https://dsw2-ulike-react.onrender.com/comentarios",
                 {
                     method: "POST",
                     headers: {
